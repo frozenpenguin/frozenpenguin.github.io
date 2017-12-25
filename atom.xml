@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>某人的大脑备份</title>
+  
+  <subtitle>一堆垃圾，未成年勿入</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://frozenpenguin.github.io/"/>
+  <updated>2017-12-25T15:39:34.033Z</updated>
+  <id>https://frozenpenguin.github.io/</id>
+  
+  <author>
+    <name>smart zombie</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vi配置</title>
+    <link href="https://frozenpenguin.github.io/%E5%B0%91%E4%BE%A0%EF%BC%8C%E6%9D%A5%E6%89%93%E4%B8%80%E6%8A%8A%E8%B6%81%E6%89%8B%E7%9A%84%E6%9D%80%E7%8C%AA%E5%88%80%E5%90%A7/vi%E9%85%8D%E7%BD%AE/"/>
+    <id>https://frozenpenguin.github.io/少侠，来打一把趁手的杀猪刀吧/vi配置/</id>
+    <published>2017-12-24T13:34:13.000Z</published>
+    <updated>2017-12-25T15:39:34.033Z</updated>
+    
+    <content type="html"><![CDATA[<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 --><ul><li><a href="#vi的基本操作">vi的基本操作</a><ul><li><a href="#移动光标">移动光标</a></li><li><a href="#输入">输入</a></li><li><a href="#骚操作">骚操作</a></li></ul></li><li><a href="#vimrc">vimrc</a></li></ul><!-- /TOC --><blockquote><p>程序是没有高低贵贱之分的，但是装逼的方式有！</p><footer><strong>--沃兹基朔德</strong></footer></blockquote><h1 id="vi的基本操作"><a href="#vi的基本操作" class="headerlink" title="vi的基本操作"></a>vi的基本操作</h1><p><a href="https://coolshell.cn/articles/5426.html" target="_blank" rel="noopener">左耳朵耗子的博客</a>写得很详细了，但还是列一些出来，方便查阅</p><h2 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h2><blockquote><p><strong>h,j,k,l</strong>左，下，上，右</p><p><strong>0:</strong>移动到行首</p><p><strong>$:</strong>移动到行尾</p><p><strong>^:</strong>移动到该行第一个非空字符</p><p><strong>w:</strong>移动到下一个单词的开始</p><p><strong>e:</strong>移动到下一个单词的末尾</p><p><strong>b:</strong>移动到上一个单词的开始</p><p><strong>gg:</strong>移动到第一行</p><p><strong>G:</strong>移动到最后一行</p><p><strong>行号 + G:</strong> 移动到某一行</p><p><strong>/pattern:</strong> 相当于搜索，也可以使用正则，在光标所在单词处按<em>效果相同，<strong>n</strong>下一个 <em>*N</em></em> 上一个</p></blockquote><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><blockquote><p><strong>i:</strong>输入模式，esc退出</p><p><strong>o:</strong>插入下一行</p><p><strong>O:</strong>插入上一行</p><p><strong>u:</strong>撤销</p><p><strong>ctrl + r:</strong> 恢复刚刚的撤销</p><p><strong>p:</strong> 在下一行粘贴，之前需要复制（<strong>yy</strong>）</p><p><strong>dd:</strong> 删除光标所在行</p><p><strong>%:</strong> 跳转到那些成对的符号处，比如<strong>{},()</strong></p><p><strong>f + 字符：</strong> 跳转到下一个字符处</p><p><strong>F + 字符:</strong> 跳转到上一个字符处</p><p><strong>ctrl + p:</strong> 自动补全</p><p><strong>J:(大写)</strong> 连接下一行</p></blockquote><h2 id="骚操作"><a href="#骚操作" class="headerlink" title="骚操作"></a>骚操作</h2><blockquote><p><strong>v:</strong>开始选中</p><p><strong>ctrl + v:</strong> 块操作，利用这个配合<strong>I</strong>(<strong>注意是大写 </strong>对应小写<strong>i*</strong>)，<strong>A</strong>,可以批量插入，或者配合<strong>d</strong>，做到特定删除</p><p>假设你有一个字符串 <strong>(map (+) (“foo”)).</strong>而光标键在第一个 o 的位置。</p><p><strong>vi” </strong>→ 会选择 foo.</p><p><strong>va” </strong>→ 会选择 “foo”.</p><p><strong>vi) </strong>→ 会选择 “foo”.</p><p><strong>va) </strong>→ 会选择(“foo”).</p><p><strong>v2i) </strong>→ 会选择 map (+) (“foo”)</p><p><strong>v2a) </strong>→ 会选择 (map (+) (“foo”))</p><p>选中代码块后可以用<strong>=</strong> 自动对其代码</p></blockquote><h1 id="vimrc"><a href="#vimrc" class="headerlink" title="vimrc"></a>vimrc</h1><p>vimrc 是vi的 配置文件这个是本地用的，配置了cscope和Tlist<br><a href="/少侠，来打一把趁手的杀猪刀吧/vi配置/vimrc" title="vimrc">vimrc</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#vi的基本操作&quot;&gt;vi的基本操作&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#移动光标&quot;&gt;
+      
+    
+    </summary>
+    
+      <category term="少侠，来打一把趁手的杀猪刀吧" scheme="https://frozenpenguin.github.io/categories/%E5%B0%91%E4%BE%A0%EF%BC%8C%E6%9D%A5%E6%89%93%E4%B8%80%E6%8A%8A%E8%B6%81%E6%89%8B%E7%9A%84%E6%9D%80%E7%8C%AA%E5%88%80%E5%90%A7/"/>
+    
+    
+      <category term="vi" scheme="https://frozenpenguin.github.io/tags/vi/"/>
+    
+      <category term="tool" scheme="https://frozenpenguin.github.io/tags/tool/"/>
+    
+  </entry>
+  
+</feed>
